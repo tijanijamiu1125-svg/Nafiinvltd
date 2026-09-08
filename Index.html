@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nafi Inv Ltd - Fresh from Our Farm to Your Doorstep</title>
+    <style>
+        :root {
+            --primary-green: #2e7d32; /* Agricultural green */
+            --logo-blue: #1a4f8b;    /* Accent blue */
+            --light-cream: #f9f8f3;  /* Background cream color */
+            --dark-text: #2c3e50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark-text);
+            background-color: #fff;
+            line-height: 1.6;
+        }
+
+        /* Header Area */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--light-cream);
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        header img.logo {
+            max-width: 220px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        header h1.tagline {
+            margin: 10px 0 0 0;
+            color: var(--primary-green);
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Products Grid */
+        .products-section {
+            margin-bottom: 50px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            color: var(--logo-blue);
+            text-transform: uppercase;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        /* Online Order Form */
+        .order-section {
+            background: var(--light-cream);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .order-section h2 {
+            margin-top: 0;
+            color: var(--primary-green);
+            text-align: center;
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input, 
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            box-sizing: border-box;
+            font-size: 1rem;
+            background-color: #fff;
+        }
+
+        .form-group textarea {
+            border-radius: 15px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        button.btn-submit {
+            width: 100%;
+            background-color: #689f38;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+
+        button.btn-submit:hover {
+            background-color: var(--primary-green);
+        }
+
+        /* Footer & Contact Section */
+        footer {
+            background-color: #fff;
+            padding: 40px 20px;
+            border-top: 1px solid #e0e0e0;
+            color: #555;
+        }
+
+        .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .contact-col h4 {
+            color: var(--primary-green);
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        .contact-col p {
+            margin: 8px 0;
+        }
+
+        .contact-col a {
+            color: var(--logo-blue);
+            text-decoration: none;
+        }
+
+        .contact-col a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section with Logo and Tagline -->
+    <header>
+        <img src="logo.png" alt="Nafi Inv Ltd Logo" class="logo">
+        <h1 class="tagline">FRESH FROM OUR FARM TO YOUR DOORSTEP</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- Products Section -->
+        <section class="products-section">
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="eggs_icon.png" alt="Fresh Eggs">
+                    <h3>FRESH EGGS</h3>
+                </div>
+                <div class="product-card">
+                    <img src="chickens_icon.png" alt="Live Chickens">
+                    <h3>LIVE CHICKENS</h3>
+                </div>
+                <div class="product-card">
+                    <img src="turkey_icon.png" alt="Turkeys">
+                    <h3>TURKEYS</h3>
+                </div>
+                <div class="product-card">
+                    <img src="frozen_icon.png" alt="Frozen Chickens">
+                    <h3>FROZEN CHICKENS</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formspree Connected Form -->
+        <section class="order-section">
+            <h2>ORDER ONLINE</h2>
+            
+            <form action="https://formspree.io/f/xljeonba" method="POST">
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <select name="Product" required>
+                            <option value="" disabled selected>Product (dropdown: Eggs, Chickens, etc.)</option>
+                            <option value="Fresh Eggs">Fresh Eggs</option>
+                            <option value="Live Chickens">Live Chickens</option>
+                            <option value="Turkeys">Turkeys</option>
+                            <option value="Frozen Chickens">Frozen Chickens</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="Quantity" placeholder="Quantity" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" name="Contact Name" placeholder="Contact Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="Address" placeholder="Address" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="email" name="Email Address" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="Phone Number" placeholder="Phone Number" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <textarea name="Special Notes" rows="3" placeholder="Additional details or instructions (optional)"></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">PLACE ORDER</button>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- Contact & Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="contact-col">
+                <h4>Company Information</h4>
+                <p><strong>Company Name:</strong> Nafi Inv Ltd</p>
+                <p><strong>Address:</strong> Lagos, Nigeria</p>
+                <p><strong>Email:</strong> <a href="mailto:nafiinvltd@gmail.com">nafiinvltd@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+2348026877616">+234 802 687 7616</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
